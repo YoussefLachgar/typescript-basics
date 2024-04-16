@@ -1,10 +1,6 @@
 "use strict";
-let n;
-n = "helo world";
-n = 10;
-n = true;
-let friends = ["Choaib", "Yassin", "Brahim"];
-for (let i = 0; i < friends.length; i++) {
-    console.log(friends[i].repeat(3));
-}
+let arrayOne = [1, 2, 3, 4, 5];
+let arrayTwo = ["A", "B", "C", "D", "E"];
+let arrayTree = [1, 2, 3, 4, 5, "A", "B", "C", "D", "E"];
+let arrayFour = [1, 2, 3, 4, 5, "A", "B", "C", ["A", "B"], [true, false]];
 //# sourceMappingURL=index.js.map
