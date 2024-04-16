@@ -1,12 +1,10 @@
 "use strict";
-let theName = "youssef";
-let age = 40;
-let hire = true;
-let all = theName;
-all = age;
-all = hire;
-function add(n, a) {
-    return a + n;
+let n;
+n = "helo world";
+n = 10;
+n = true;
+let friends = ["Choaib", "Yassin", "Brahim", 10];
+for (let i = 0; i < friends.length; i++) {
+    console.log(friends[i].repeat);
 }
-console.log(add(1, "3")); // "13"
 //# sourceMappingURL=index.js.map
