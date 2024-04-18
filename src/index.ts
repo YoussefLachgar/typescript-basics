@@ -1,9 +1,8 @@
 let showMsg = true;
 
 function showDetails(name: string, age: number, salary: number){
-    const than = 4;
     if(showMsg){
-        return `Hello ${name}, Your Ag is ${age}, Salary is ${salary}`;
+        return `Hello ${name}, Your Ag is ${age}`;
     }
 
     return "Ther is no data to chow";
