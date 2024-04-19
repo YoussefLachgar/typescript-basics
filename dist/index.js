@@ -1,6 +1,10 @@
 "use strict";
-let arrayOne = [1, 2, 3, 4, 5];
-let arrayTwo = ["A", "B", "C", "D", "E"];
-let arrayTree = [1, 2, 3, 4, 5, "A", "B", "C", "D", "E"];
-let arrayFour = [1, 2, 3, 4, 5, "A", "B", "C", ["A", "B"], [true, false]];
+let showMsg = true;
+function showDetails(name, age, salary) {
+    if (showMsg) {
+        return `Hello ${name}, Your Ag is ${age}`;
+    }
+    return "Ther is no data to chow";
+}
+console.log(showDetails("Youssef", 16, 5000));
 //# sourceMappingURL=index.js.map
