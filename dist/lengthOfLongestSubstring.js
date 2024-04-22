@@ -1,17 +1,16 @@
 "use strict";
 var lengthOfLongestSubstring = (s) => {
-    let maxLen = 0;
-    let map = {};
-    let start = 0;
-    for (let i = 0; i < s.length; i++) {
-        const char = s[i];
-        if (char in map && map[char] >= start) {
-            start = map[char] + 1;
+    const letters = new Set();
+    let res = 0, l = 0;
+    for (let r = 0; r < s.length; r++) {
+        while (letters.has(s[r])) {
+            letters.delete(s[l]);
+            l++;
         }
-        map[char] = i;
-        maxLen = Math.max(maxLen, i - start + 1);
+        letters.add(s[r]);
+        res = Math.max(res, r - l + 1);
     }
-    return maxLen;
+    return res;
 };
 console.log(lengthOfLongestSubstring("abcabcbb"));
 console.log(lengthOfLongestSubstring("bbbbb"));
