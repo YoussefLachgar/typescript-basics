@@ -11,5 +11,8 @@ function addAll(...nums) {
     nums.forEach((num) => result += num);
     return result;
 }
-console.log(addAll(16, 5000));
+const add = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(add(16, 500));
 //# sourceMappingURL=index.js.map
