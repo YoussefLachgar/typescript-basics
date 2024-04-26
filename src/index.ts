@@ -17,8 +17,6 @@ function addAll(...nums: number[]){
     return result;
 }
 
-const add = function(num1: number, num2: number): number {
-    return num1 + num2;
-}
+const add = (num1: number, num2: number): number => num1 + num2;
 
-console.log(add( 16, 500));
+console.log(add( 19, 500));
