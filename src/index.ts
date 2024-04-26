@@ -10,9 +10,10 @@ function showDetails(name: string, age: number, salary: number){
 
 function addAll(...nums: number[]){
     let result = 0;
-    for(let i = 0; i < nums.length; i++) {
-        result += nums[i];
-    }
+    // for(let i = 0; i < nums.length; i++) {
+    //     result += nums[i];
+    // }
+    nums.forEach((num) => result += num);
     return result;
 }
 

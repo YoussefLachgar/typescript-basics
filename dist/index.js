@@ -8,9 +8,7 @@ function showDetails(name, age, salary) {
 }
 function addAll(...nums) {
     let result = 0;
-    for (let i = 0; i < nums.length; i++) {
-        result += nums[i];
-    }
+    nums.forEach((num) => result += num);
     return result;
 }
 console.log(addAll(16, 5000));
