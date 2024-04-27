@@ -12,5 +12,6 @@ function addAll(...nums) {
     return result;
 }
 const add = (num1, num2) => num1 + num2;
-console.log(add(19, 500));
+let smya = "Elking";
+console.log(smya);
 //# sourceMappingURL=index.js.map

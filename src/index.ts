@@ -19,4 +19,8 @@ function addAll(...nums: number[]){
 
 const add = (num1: number, num2: number): number => num1 + num2;
 
-console.log(add( 19, 500));
+// data types: Type Alias
+type st = string;
+let smya: st = "Elking";
+
+console.log(smya);
