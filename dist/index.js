@@ -13,5 +13,8 @@ function addAll(...nums) {
 }
 const add = (num1, num2) => num1 + num2;
 let smya = "Elking";
-console.log(smya);
+let jarab;
+jarab = 10;
+jarab = "ra can jarab";
+console.log(jarab);
 //# sourceMappingURL=index.js.map

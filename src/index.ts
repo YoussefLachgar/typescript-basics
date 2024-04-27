@@ -23,4 +23,9 @@ const add = (num1: number, num2: number): number => num1 + num2;
 type st = string;
 let smya: st = "Elking";
 
-console.log(smya);
+type standnum = string | number;
+let jarab: standnum;
+jarab = 10;
+jarab = "ra can jarab";
+
+console.log(jarab);
