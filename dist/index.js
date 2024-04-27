@@ -16,5 +16,12 @@ let smya = "Elking";
 let jarab;
 jarab = 10;
 jarab = "ra can jarab";
+function getActions(btns) {
+    console.log(`Action for Button up is ${btns.up}`);
+    console.log(`Action for Button down is ${btns.down}`);
+    console.log(`Action for Button right is ${btns.right}`);
+    console.log(`Action for Button left is ${btns.left}`);
+}
+getActions({ up: "jump", down: "go down", right: "go right", left: "go left" });
 console.log(jarab);
 //# sourceMappingURL=index.js.map
