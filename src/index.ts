@@ -37,13 +37,18 @@ type Button = {
     left: string
 }
 
-function getActions(btns: Button){
+type Last = Button & {
+    x: boolean
+}
+
+function getActions(btns: Last){
     console.log(`Action for Button up is ${btns.up}`);
     console.log(`Action for Button down is ${btns.down}`);
     console.log(`Action for Button right is ${btns.right}`);
     console.log(`Action for Button left is ${btns.left}`);
+    console.log(`Action for Last type x is ${btns.x}`);
 }
 
-getActions({up: "jump", down: "go down", right: "go right", left: "go left"});
+getActions({up: "jump", down: "go down", right: "go right", left: "go left", x: true});
 
 console.log(jarab);
