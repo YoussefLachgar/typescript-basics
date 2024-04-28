@@ -35,4 +35,7 @@ function compare(num1, num2) {
     }
 }
 console.log(compare(10, 4));
+console.log(compare(10, 20));
+console.log(compare(10, 10));
+let article = [11, "title one", true];
 //# sourceMappingURL=index.js.map
