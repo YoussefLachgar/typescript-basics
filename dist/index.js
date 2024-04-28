@@ -34,8 +34,9 @@ function compare(num1, num2) {
         return -1;
     }
 }
-console.log(compare(10, 4));
-console.log(compare(10, 20));
-console.log(compare(10, 10));
 let article = [11, "title one", true];
+const [id, title, published] = article;
+console.log(id);
+console.log(title);
+console.log(published);
 //# sourceMappingURL=index.js.map

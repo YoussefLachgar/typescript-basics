@@ -67,10 +67,12 @@ function compare(num1: number, num2: number): fr {
     }
 }
 
-console.log(compare(10, 4));
-console.log(compare(10, 20));
-console.log(compare(10, 10));
 
 
 // data types: Tuple type
 let article: [number, string, boolean] = [11, "title one", true];
+const [id, title, published] = article;
+
+console.log(id);
+console.log(title);
+console.log(published);
