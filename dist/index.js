@@ -23,6 +23,16 @@ function getActions(btns) {
     console.log(`Action for Button left is ${btns.left}`);
     console.log(`Action for Last type x is ${btns.x}`);
 }
-getActions({ up: "jump", down: "go down", right: "go right", left: "go left", x: true });
-console.log(jarab);
+function compare(num1, num2) {
+    if (num1 === num2) {
+        return 0;
+    }
+    else if (num1 > num2) {
+        return 1;
+    }
+    else {
+        return -1;
+    }
+}
+console.log(compare(10, 4));
 //# sourceMappingURL=index.js.map

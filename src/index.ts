@@ -49,6 +49,20 @@ function getActions(btns: Last){
     console.log(`Action for Last type x is ${btns.x}`);
 }
 
-getActions({up: "jump", down: "go down", right: "go right", left: "go left", x: true});
+// getActions({up: "jump", down: "go down", right: "go right", left: "go left", x: true});
 
-console.log(jarab);
+// data types: Literal Types
+
+function compare(num1: number, num2: number): number {
+    if (num1 === num2){
+        return 0;
+    }
+    else if (num1 > num2){
+        return 1;
+    }
+    else {
+        return -1;
+    }
+}
+
+console.log(compare(10, 4));
