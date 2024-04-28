@@ -53,8 +53,9 @@ function getActions(btns: Last){
 
 // data types: Literal Types
 
+type fr = 0 | 1 | -1 ;
 
-function compare(num1: number, num2: number): 0 | 1 | -1 {
+function compare(num1: number, num2: number): fr {
     if (num1 === num2){
         return 0;
     }
