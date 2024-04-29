@@ -36,7 +36,9 @@ function compare(num1, num2) {
 }
 let article = [11, "title one", true];
 const [id, title, published] = article;
-console.log(id);
-console.log(title);
-console.log(published);
+const fail = (msg) => {
+    throw new Error(msg);
+    return 10;
+};
+console.log(fail("title"));
 //# sourceMappingURL=index.js.map

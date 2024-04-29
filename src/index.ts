@@ -73,6 +73,11 @@ function compare(num1: number, num2: number): fr {
 let article: [number, string, boolean] = [11, "title one", true];
 const [id, title, published] = article;
 
-console.log(id);
-console.log(title);
-console.log(published);
+// data types: Void and Never
+
+const fail = (msg: string) => {
+    throw new Error(msg);
+    return 10; // this line is anreachable because it's never type function
+}
+
+console.log(fail("title"));
