@@ -80,4 +80,13 @@ const fail = (msg: string) => {
     return 10; // this line is anreachable because it's never type function
 }
 
-console.log(fail("title"));
+function always(msg: string): never {
+    while (true) {
+        console.log(msg);
+    }   
+    
+    console.log("finished"); // this line is anreachable because it's never type function
+}
+
+always("title");
+console.log("title"); // this line is anreachable because it's never type function

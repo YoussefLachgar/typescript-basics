@@ -40,5 +40,12 @@ const fail = (msg) => {
     throw new Error(msg);
     return 10;
 };
-console.log(fail("title"));
+function always(msg) {
+    while (true) {
+        console.log(msg);
+    }
+    console.log("finished");
+}
+always("title");
+console.log("title");
 //# sourceMappingURL=index.js.map
