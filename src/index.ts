@@ -1,14 +1,20 @@
 // data types: enum
 
+enum Kids {
+    Five = 25,
+    Seven = 20,
+    Ten = 15
+}
+
 const enum Level {
-    Kids = 15,
+    Kid = Kids.Five,
     Easy = 9,
     Medium = 6,
     Hard = 3
 }
 
-let lvl: string = "Easy";
+let lvl: string = "Kids";
 
-if(lvl === "Easy"){
-    console.log(`the level is ${lvl} And number of seconds is ${Level.Easy}`);
+if(lvl === "Kids"){
+    console.log(`the level is ${lvl} And number of seconds is ${Level.Kid}`);
 }
