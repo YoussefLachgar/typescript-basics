@@ -75,18 +75,33 @@ const [id, title, published] = article;
 
 // data types: Void and Never
 
-const fail = (msg: string) => {
-    throw new Error(msg);
-    return 10; // this line is anreachable because it's never type function
-}
+// const fail = (msg: string) => {
+//     throw new Error(msg);
+//     return 10; // this line is anreachable because it's never type function
+// }
 
-function always(msg: string): never {
-    while (true) {
-        console.log(msg);
-    }   
+// function always(msg: string): never {
+//     while (true) {
+//         console.log(msg);
+//     }   
     
-    console.log("finished"); // this line is anreachable because it's never type function
+//     console.log("finished"); // this line is anreachable because it's never type function
+// }
+
+// always("title");
+// console.log("title"); // this line is anreachable because it's never type function
+
+// data types: enum
+
+enum Level {
+    Kids = 15,
+    Easy = 9,
+    Medium = 6,
+    Hard = 3
 }
 
-always("title");
-console.log("title"); // this line is anreachable because it's never type function
+let lvl: string = "Easy";
+
+if(lvl === "Easy"){
+    console.log(`the level is ${lvl} And number of seconds is ${Level.Easy}`);
+}

@@ -36,16 +36,15 @@ function compare(num1, num2) {
 }
 let article = [11, "title one", true];
 const [id, title, published] = article;
-const fail = (msg) => {
-    throw new Error(msg);
-    return 10;
-};
-function always(msg) {
-    while (true) {
-        console.log(msg);
-    }
-    console.log("finished");
+var Level;
+(function (Level) {
+    Level[Level["Kids"] = 15] = "Kids";
+    Level[Level["Easy"] = 9] = "Easy";
+    Level[Level["Medium"] = 6] = "Medium";
+    Level[Level["Hard"] = 3] = "Hard";
+})(Level || (Level = {}));
+let lvl = "Easy";
+if (lvl === "Easy") {
+    console.log(`the level is ${lvl} And number of seconds is ${Level.Easy}`);
 }
-always("title");
-console.log("title");
 //# sourceMappingURL=index.js.map
