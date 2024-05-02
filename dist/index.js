@@ -13,7 +13,11 @@ var Level;
     Level[Level["Hard"] = 3] = "Hard";
 })(Level || (Level = {}));
 let lvl = "Kids";
-if (lvl === "Kids") {
-    console.log(`the level is ${lvl} And number of seconds is ${25}`);
+function getActions(btns) {
+    console.log(btns.one);
+    console.log(btns.two);
+    console.log(btns.three);
+    console.log(btns.five);
 }
+getActions({ one: "hello", two: 100, three: true, five: false });
 //# sourceMappingURL=index.js.map
