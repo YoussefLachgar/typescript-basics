@@ -21,5 +21,6 @@ let lvl: string = "Kids";
 
 // data types: Type Assertions
 
-let myImg = document.getElementById("my-img") as HTMLImageElement;
+// let myImg = document.getElementById("my-img") as HTMLImageElement;
+let myImg = <HTMLImageElement> document.getElementById("my-img");
 console.log(myImg.src);
