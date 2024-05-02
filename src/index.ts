@@ -15,6 +15,11 @@ const enum Level {
 
 let lvl: string = "Kids";
 
-if(lvl === "Kids"){
-    console.log(`the level is ${lvl} And number of seconds is ${Level.Kid}`);
-}
+// if(lvl === "Kids"){
+//     console.log(`the level is ${lvl} And number of seconds is ${Level.Kid}`);
+// }
+
+// data types: Type Assertions
+
+let myImg = document.getElementById("my-img") as HTMLImageElement;
+console.log(myImg.src);
